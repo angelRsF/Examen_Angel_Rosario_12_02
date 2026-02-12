@@ -98,18 +98,55 @@ class MainActivity : ComponentActivity() {
                 )
                 Text(
                     text = "Imagen Referente al Empecinado",
-                    fontSize = 32.sp,
+                    fontSize = 18.sp,
                     color = Color.White,
                     modifier = Modifier
                         .fillMaxWidth()
-                        .padding(top = 30.dp),
+                        .padding(top = 15.dp),
+                    textAlign = TextAlign.Center
+                )
+                Spacer(modifier = Modifier.height(20.dp))
+
+                Image(
+                    painterResource(
+                        id = R.drawable.empecinado
+                    ), contentDescription = "Empecinado",
+                    modifier = Modifier
+                        .height(100.dp)
+                )
+                Text(
+                    text = "Segunda Imagen Referente al Empecinado",
+                    fontSize = 18.sp,
+                    color = Color.White,
+                    modifier = Modifier
+                        .fillMaxWidth()
+                        .padding(top = 15.dp),
+                    textAlign = TextAlign.Center
+                )
+                Spacer(modifier = Modifier.height(20.dp))
+                Image(
+                    painterResource(
+                        id = R.drawable.empecinado
+                    ), contentDescription = "Empecinado",
+                    modifier = Modifier
+                        .height(100.dp)
+                )
+                Text(
+                    text = "Tercera Imagen Referente al Empecinado",
+                    fontSize = 18.sp,
+                    color = Color.White,
+                    modifier = Modifier
+                        .fillMaxWidth()
+                        .padding(top = 15.dp),
                     textAlign = TextAlign.Center
                 )
             }
             item {
-                LazyRow(modifier = Modifier
-                    .fillMaxSize()
-                    .padding(top = 30.dp))
+                LazyRow(
+                    modifier = Modifier
+                        .fillMaxSize()
+                        .padding(top = 30.dp)
+                )
                 {
                     item {
                         Image(
